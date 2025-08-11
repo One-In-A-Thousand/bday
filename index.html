@@ -22,6 +22,20 @@
         font-size: 3rem;
         margin-bottom: 20px;
       }
+      img {
+        max-width: 70%; /* keeps it smaller on mobile */
+        height: auto; /* maintain aspect ratio */
+        margin: 20px auto;
+        display: block;
+        border-radius: 15px;
+        animation: fadeIn 1.5s ease forwards;
+      }
+
+      @media (min-width: 768px) {
+        img {
+          max-width: 400px; /* desktop cap */
+        }
+      }
 
       p {
         font-size: 1.3em;
