@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday 💙💚</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #00bfff, #00ff99);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+      img {
+        width: 250px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;
+      }
+      .hearts {
+        font-size: 2rem;
+        animation: float 2s infinite alternate;
+      }
+      @keyframes float {
+        from {
+          transform: translateY(0px);
+        }
+        to {
+          transform: translateY(-10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>💙💚 Happy Birthday 💙💚</h1>
+
+    <img
+      src="WhatsApp Image 2025-08-11 at 6.50.54 PM.jpg"
+      alt="Happy Birthday"
+    />
+
+    <div class="hearts">💙💚💙💚💙💚</div>
+
+    <audio id="bgMusic" loop>
+      <source
+        src="Tum Hi Ho Aashiqui 2 Full Song With Lyrics  Aditya Roy Kapur, Shraddha Kapoor short.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script>
+      document.body.addEventListener("click", function playOnce() {
+        const audio = document.getElementById("bgMusic");
+        audio.play();
+        document.body.removeEventListener("click", playOnce); // only first click
+      });
+    </script>
+  </body>
+</html>
